@@ -1,0 +1,5 @@
+#ignorujemy katalogi inne niz CZ3
+../CZ1/
+../CZ2/
+../.vscode/
+../books.txt

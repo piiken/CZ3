@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  biblioteka:
+    build: .
+    container_name: biblioteka_app
+    volumes:
+      - ./books.db:/app/books.db
+    stdin_open: true
+    tty: true
+    command: ["pytest"]
