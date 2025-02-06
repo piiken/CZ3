@@ -21,9 +21,11 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y docker-compose
-
+          
       - name: Budowanie i testowanie Dockera
         run: |
+          cd CZ3
           docker-compose build
           docker-compose run biblioteka pytest
-          
+
+
